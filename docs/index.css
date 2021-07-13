@@ -18,10 +18,10 @@
 }
 
 body {
+  display: grid;
   background-color: #fce373;
   color: #231f20;
   font-family: "mononoki_nerd_fontregular";
-  text-align: center;
 }
 
 main {
@@ -35,26 +35,46 @@ h3 {
 
 p {
   margin-top: 0;
+  padding-left: 30px;
+}
+
+main > div {
   padding-left: 10px;
 }
 
 .name {
   margin-bottom: 10px;
+  text-align: center;
 }
 
 .bio {
   margin-top: 0px;
+  text-align: center;
 }
 
-.about {
-  text-align: left;
-  padding-left: 30px;
+.info {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+}
+
+span {
+  font-weight: bold;
+}
+
+.img-wrap {
+  text-align: center;
+  font-size: 13px;
 }
 
 .me {
-  text-align: center;
+  margin: auto;
+  display: block;
   width: 60%;
   max-width: 300px;
   border: solid 4px;
 }
 
+footer {
+  margin-top: 30px;
+  text-align: center;
+}
